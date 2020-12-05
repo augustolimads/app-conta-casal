@@ -25,6 +25,7 @@ export default function Home() {
       <Head>
         <title>Divisor de conta</title>
         <link rel="icon" href="/favicon.ico" />
+        <script data-ad-client="ca-pub-8356746534216149" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
 
       <main>

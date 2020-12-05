@@ -29,7 +29,9 @@ export default function Home() {
 
       <main>
         <section>
-          <h1 className='text-3xl text-center font-bold text-gray-600'>Calculadora de finanças para casal</h1>
+          <h1 
+          id='home'
+          className='text-3xl text-center font-bold text-gray-600 p-4'>Calculadora de finanças para casal</h1>
         </section>
 
         <div className='flex flex-col justify-center md:flex-row p-4 gap-2'>
@@ -97,15 +99,16 @@ export default function Home() {
                 </div>
               </div>
 
-              <button
-                className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
+              <a
+                className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out block text-center'
+                href='/#resultado'
               >
                 VER RESULTADOS
-                </button>
+                </a>
             </form>
           </section>
           <section className='shadow-xl p-4 rounded bg-gray-50 space-y-4'>
-            <h2 className='font-semibold text-2xl text-gray-700'>Resultado</h2>
+            <h2 className='font-semibold text-2xl text-gray-700' id='resultado'>Resultado</h2>
 
             <div className='shadow p-4 rounded flex flex-col space-y-2 bg-green-100'>
               <h3 className='font-semibold text-lg text-gray-700'>Visão geral do casal</h3>
@@ -128,15 +131,23 @@ export default function Home() {
               <p className='p-1 hover:shadow'>Sobra: R${result.restPartinerB}</p>
             </div>
 
-            <button
-              className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
+            <a
+              className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out block text-center'
+              href='/#home'
             >
               TENTAR NOVAMENTE
-                </button>
+                </a>
           </section>
         </div>
-        <section>
-          <p>Texto explicativo</p>
+        <section className='p-4 flex justify-center'>
+          <div>
+          <h2 className='font-semibold text-2xl text-gray-700 py-4'>Sobre a Calculadora de Finanças de Casal</h2>
+          <p>Esta calculadora serve para ajudar o casal a dividir as contas de forma justa e clara, baseada na proporção do salário de cada um das partes.</p>
+          <hr className='mt-8'/>
+          <h2 className='font-semibold text-2xl text-gray-700 py-4'>Sobre o Projeto</h2>
+          <p>Este projeto faz parte do artigo de temas tecnológicos em programação, de Augusto Silva Lima.</p>
+          <p className='mt-4 font-semibold hover:underline'><a href='https://github.com/augustolimads/app-conta-casal'>Github</a></p>
+          </div>
         </section>
       </main>
 

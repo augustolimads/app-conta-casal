@@ -98,9 +98,9 @@ export default function Home() {
               </div>
 
               <button
-                className='lg:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
+                className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
               >
-                CALCULAR
+                VER RESULTADOS
                 </button>
             </form>
           </section>
@@ -111,7 +111,7 @@ export default function Home() {
               <h3 className='font-semibold text-lg text-gray-700'>Visão geral do casal</h3>
               <p className='p-1 hover:shadow font-semibold'>Renda do casal: R${result.totalCouple}</p>
               <p className='p-1 hover:shadow'>Gasto total: R${bills}</p>
-              <p className='p-1 hover:shadow'>Gasto de {(bills / result.totalCouple * 100).toFixed(2)}% da renda</p>
+              <p className='p-1 hover:shadow'>Gasto de {result.taxBills || 0}% da renda</p>
             </div>
 
             <div className='shadow p-4 rounded flex flex-col space-y-2 bg-blue-100'>
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
 
             <button
-              className='lg:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
+              className='md:hidden text-white font-bold p-3 w-full rounded bg-gray-700 hover:bg-gray-800 duration-300 ease-in-out'
             >
               TENTAR NOVAMENTE
                 </button>

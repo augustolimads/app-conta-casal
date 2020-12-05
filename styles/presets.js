@@ -1,0 +1,1 @@
+const card = 'flex p-4 rounded shadow'
